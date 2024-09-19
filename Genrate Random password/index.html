@@ -7,17 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let str="abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
-        let strlen=str.length;
-        document.write("<h1>",strlen,"</h1>");
-        let mystr="";
-        for(var i=0;i<=7;i++){
-            var mynum=Math.floor(Math.random()*61);
-            mystr +=str.charAt(mynum);
-        }
-        document.write("<h1> Random password : ",mystr,"</h1>");
 
-    </script>
+    <h1 style="color: blue;">Math object PI</h1>
+     <script>
+        const pi=Math.PI;
+        document.write("<h1> pi : ",pi,"</h1>");
+    </script> 
+     <br>
+     <br>
+    <h1 style="color: red;">Math object use in round</h1>
+     <script>
+        const ans1=Math.round(24.56);
+        document.write("<h1>",ans1,"</h1>");
+        const ans2=Math.round(24.46);
+        document.write("<h1>",ans2,"</h1>");
+
+    </script> 
+
 </body>
 </html>

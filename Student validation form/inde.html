@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="skyblue">
+
+   <script>
+    function validation(){
+        let name =document.f1.nm.value;
+        let age =document.f1.ag.value;
+        let age1= parseInt(age);
+        let password1 =document.f1.pass1.value;
+        let password2 =document.f1.pass2.value;
+        let fees =document.f1.fs.value;
+        let fees1=parseInt(fees);
+        
+        if(name==""){
+            alert("please Enter your name");
+            document.f1.nm.focus();
+            return false;
+        }
+
+        if(age==""){
+            alert("please Enter your age");
+            document.f1.ag.focus();
+            return false;
+        }
+
+        if(isNaN(age1)){
+            alert("please Enter numeric value");
+            document.f1.ag.value="";
+            document.f1.ag.focus();
+            return false;   
+        }
+
+        if(password1==""){
+            alert("please Enter password");
+            document.f1.pass1.focus();
+            return false;
+        }
+
+        if(password2==""){
+            alert("please Enter password");
+            document.f1.pass2.focus();
+            return false;
+        }
+
+        if(password1!=password2){
+           alert("password does not match");
+           document.f1.pass1.value="";
+           document.f1.pass2.value="";
+           document.f1.pass2.focus();
+           return false;
+        }
+
+        if(fees==""){
+            alert("please enter your fees");
+            document.f1.fs.value="";
+            document.f1.fs.focus();
+            return false;
+        }
+
+         
+        if(isNaN(fees1)){
+            alert("please enter numeric fees");
+            document.f1.fs.value="";
+            document.f1.fs.focus();
+            return false;   
+        }
+
+        if(fees<45000){
+            alert("your fees eqal or more than 45000");
+            document.f1.fs.value="";
+            document.f1.fs.focus;
+            return false;
+        }
+
+    }
+   </script>
+
+<center>
+<form name="f1" method="post"  action="save.html" onsubmit=" return validation()">
+    <h1 style="color: purple;">Student Form Validation</h1>
+    Enter name : <input type="text" name="nm"> <br> <br>
+    Enter age : <input type="text" name="ag"> <br> <br>
+    Enter password : <input type="text" name="pass1"> <br> <br>
+    Re Enter password : <input type="text" name="pass2"> <br> <br>
+    Enter fees : <input type="text" name="fs"> <br>
+    (Not : fees eqal or more than 45000/-)
+    <br>
+    <button>save</button>
+</form>
+</center>
+</body>
+</html>

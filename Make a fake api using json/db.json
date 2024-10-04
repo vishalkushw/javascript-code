@@ -1,0 +1,79 @@
+{
+    "student":[
+        {
+    "rollnum":121,
+    "Name":"vishal",
+    "city":"vidisha",
+    "fees":23450
+
+},
+
+{
+    "rollnum":122,
+    "Name":"Pawan",
+    "city":"bhopal",
+    "fees":33450
+
+},
+{
+    "rollnum":123,
+    "Name":"Ram",
+    "city":"Indore",
+    "fees":22250
+
+}
+
+],
+
+
+"subject":[
+    {
+"rollnum":1,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+
+{
+"rollnum":2,
+"Name":"sandeep",
+"city":"vds"
+
+},
+{
+"rollnum":3,
+"Name":"Adit",
+"city":"sirinj"
+
+}
+
+],
+
+"fees":[
+    {
+"rollnum":1211,
+"Name":"vishal",
+"city":"wardha",
+"fees":33444
+
+},
+
+{
+"rollnum":1212,
+"Name":"sivam",
+"city":"indore",
+"fees":23450
+
+},
+{
+"rollnum":1213,
+"Name":"sadeep",
+"city":"dehli",
+"fees":29887
+
+}
+
+]
+
+}

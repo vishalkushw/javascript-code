@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+       function display(){
+      var name=  document.getElementById("nm").value;
+      var city=  document.getElementById("ct").value;
+
+         alert("name:"+ name + " city:"+ city );
+        }
+    </script> -->
+
+
+
+    <script>
+        function display(){
+           var name= document.getElementById("nm").value;
+
+           document.getElementById("head").innerHTML="Hi i am " + name + " year old! ";
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <!--     
+      Enter  Name : <input type="text" id="nm">
+      <br>
+      Enter  city : <input type="text" id="ct">
+      <br>
+         -->
+
+
+        <!-- <h1 id="head">Wel come to Cybrom</h1> -->
+   
+
+        Enter age : <input type="text" id="nm">
+
+       <button onclick="display()">cilck here</button> 
+        <h1 id="head"> Display your Age  </h1>
+
+
+</body>
+</html> 

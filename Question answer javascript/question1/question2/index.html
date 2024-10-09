@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function display(){
+        let phy=Number(document.getElementById("py").value);
+        let chem=Number(document.getElementById("che").value);
+        let math=Number(document.getElementById("mh").value);
+        let eng=Number(document.getElementById("en").value);
+
+        const total=(phy+chem+math+eng);
+        const per=total*100/400;
+
+        document.write("Total Marks :"+ total); 
+        document.write("persent :"+per);
+       }
+
+    </script>
+
+
+    Enter Phsics Marks : <input type="text" id="py">  <br>
+    Enter Chemistry Marks : <input type="text" id="che"> <br>
+    Enter Math Marks : <input type="text" id="mh">  <br>
+    Enter Eng Marks : <input type="text" id="en"> <br>
+    <button onclick="display()">click</button>
+    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1> 
+</body>
+</html>

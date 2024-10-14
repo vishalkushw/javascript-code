@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+<body>
+    <style>
+    #box{
+        width:320px;
+        border: 3px solid lightskyblue;
+        padding: 30px;
+        margin: auto;
+        background-color: brown;
+    }
+    #txtbox{
+        width:300px;
+        height: 50px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
+        background-color: aqua;
+    }
+
+ button{
+    padding: 10px;
+    font-size: 30px;
+    color: blue;
+    margin: 10px;
+ }
+
+</style>
+<script>
+    function dataRemove(){
+        let a= document.getElementById('txtbox').value;
+        let mylen=a.length;
+        let ans=a.slice(0,mylen-1);
+        document.getElementById('txtbox').value=ans;
+        
+    }
+</script>
+
+
+<div id="box">
+
+    
+   <input type="text" id="txtbox">
+   <button id="btn1" onclick="document.getElementById('txtbox').value+=document.getElementById('btn1').innerHTML">1</button>
+   <button id="btn2" onclick="document.getElementById('txtbox').value+=document.getElementById('btn2').innerHTML">2</button>
+   <button id="btn3" onclick="document.getElementById('txtbox').value+=document.getElementById('btn3').innerHTML">3</button>
+   <button id="btn4" onclick="document.getElementById('txtbox').value+=document.getElementById('btn4').innerHTML">4</button>
+   <button id="btn5" onclick="document.getElementById('txtbox').value+=document.getElementById('btn5').innerHTML">5</button>
+   <button id="btn6" onclick="document.getElementById('txtbox').value+=document.getElementById('btn6').innerHTML">6</button>
+   <button id="btn7" onclick="document.getElementById('txtbox').value+=document.getElementById('btn7').innerHTML">7</button>
+   <button id="btn8" onclick="document.getElementById('txtbox').value+=document.getElementById('btn8').innerHTML">8</button>
+   <button id="btn9" onclick="document.getElementById('txtbox').value+=document.getElementById('btn9').innerHTML">9</button>
+   <button id="btn0" onclick="document.getElementById('txtbox').value+=document.getElementById('btn0').innerHTML">0</button>
+   <button id="btnplus" onclick="document.getElementById('txtbox').value+=document.getElementById('btnplus').innerHTML">+</button>
+   <button id="btnminus" onclick="document.getElementById('txtbox').value+=document.getElementById('btnminus').innerHTML">-</button>
+   <button id="btnmult" onclick="document.getElementById('txtbox').value+=document.getElementById('btnmult').innerHTML">*</button>
+   <button id="btndivide" onclick="document.getElementById('txtbox').value+=document.getElementById('btndivide').innerHTML">/</button>
+   <button id="btneqal" onclick="document.getElementById('txtbox').value=eval(document.getElementById('txtbox').value)">=</button>
+
+   <button onclick="document.getElementById('txtbox').value=''">Ac</button>
+   
+   <button onclick="dataRemove()">x</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+
+<body>
+    <button onclick="myData()">Set Data</button>
+    <button onclick="dataGet()">Get Data</button>
+    <button onclick="clearData()">Clear Data</button>
+    <p id="demo"></p>
+
+    <script>
+        // Function to store data in local storage
+        function myData() {
+            let name = "Vishal Kushwah";
+            window.localStorage.setItem("firstnm", name);
+            alert("Data stored successfully!");
+        }
+
+        // Function to retrieve data from local storage
+        function dataGet() {
+            let myfnm = window.localStorage.getItem("firstnm");
+            if (myfnm === null) {
+                document.getElementById("demo").innerHTML = "No data found!";
+            } else {
+                document.getElementById("demo").innerHTML = "Hii my name is " + myfnm + " and I am from Bhopal";
+            }
+        }
+
+        // Function to clear local storage data
+        function clearData() {
+            window.localStorage.clear();
+            document.getElementById("demo").innerHTML = "";
+            alert("Local data cleared!");
+        }
+    </script>
+</body>
+
+</html>

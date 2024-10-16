@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function display(){
+        var a=123;
+        var b=0;
+        try{
+            if(b==0){
+                throw"not divide by zero";
+            }
+            else{
+            Document.getElementById("demo").innerHTML+="Division of : "+a+'by'+b+'='+a/b;
+            }
+        }
+        catch(e){
+            alert(e)
+        }
+    }
+</script>
+<body>
+    <h1 id="demo">well conme</h1>
+    <button onclick="display()">click here</button>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function display(){
+
+
+        try{
+        let a= document.getElementById('no1').value;
+        let b= document.getElementById('no2').value;
+
+        //  if(isNaN(a)||isNaN(b)){
+        //     throw "not use string value";
+        //  }
+            if(b==0){
+                throw"not divide by zero";
+            }
+
+            else{
+                let c=a/b;
+            Document.getElementById("ans").innerHTML="division"+c;
+            }
+        }
+        catch(error){
+          document.getElementById("ans").innerHTML=error;
+        }
+    
+        finally{
+            document.getElementById("ans").innerHTML="this always excute";
+        }
+    }
+</script>
+<body>
+    Enter num1 : <input type="text" id="no1"><br>
+    Enter num2 : <input type="text" id="no2"><br>
+    <button onclick="display()" id="ans">Answer</button>
+</body>
+</html>

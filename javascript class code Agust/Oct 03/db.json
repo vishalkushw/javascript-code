@@ -1,0 +1,29 @@
+{
+
+
+    "student":[
+        {
+            "id":1,
+            "name":"vishal",
+            "city":"bhopal",
+            "fees":23400
+
+        },
+        {
+            "id":2,
+            "name":"vishal kushwah",
+            "city":"indore",
+            "fees":200000
+
+        },
+        {
+            "id":3,
+            "name":"Pawan",
+            "city":"indore",
+            "fees":45000
+
+        }
+
+
+    ]
+}

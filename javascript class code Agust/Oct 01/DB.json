@@ -1,0 +1,100 @@
+{
+    "student":[
+        {
+    "rollnum":121,
+    "Name":"vishal",
+    "city":"bhopal",
+    "fees":23450
+
+},
+
+{
+    "rollnum":121,
+    "Name":"vishal",
+    "city":"bhopal",
+    "fees":23450
+
+},
+{
+    "rollnum":121,
+    "Name":"vishal",
+    "city":"bhopal",
+    "fees":23450
+
+},
+{
+    "rollnum":121,
+    "Name":"vishal",
+    "city":"bhopal",
+    "fees":23450
+
+}
+],
+
+
+"subject":[
+    {
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+}
+],
+
+"fees":[
+    {
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+},
+{
+"rollnum":121,
+"Name":"vishal",
+"city":"bhopal",
+"fees":23450
+
+}
+]
+
+}
+

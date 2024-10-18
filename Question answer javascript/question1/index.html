@@ -6,16 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-    const d =new Date();
-    const ans=d.getDay();
-    const ct=d.getHours();
-    const ctm=d.getMinutes();
-    const cts=d.getSeconds();
-    const day=["sunday","monday","tuesday","Wednesday","thursday","friday","saturday"];
-    document.write("<h1>"+"Today is : "+day[ans]+"</h1>");
-    document.write("<h1>"+"Current time is  : "+ct+" PM: "+ ctm +":"+cts+"</h1>");
+    <script>
+        let str=prompt("enter a string");
 
-   </script>
+        if(str==""){
+            document.write("string are blank");
+        }
+
+        else{
+            document.write("string are not a blank");
+        }
+    </script>
 </body>
 </html>

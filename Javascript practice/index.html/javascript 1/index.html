@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+     
+  <script>
+        function display(){
+          var name=  document.f1.nm.value;
+          var city=  document.f1.ct.value;
+          var roll=  document.f1.rn.value;
+          var clas=  document.f1.cls.value;
+
+          document.write("Name : "+name +" city : "+city +" Rollnumber : "+roll+ " Class : "+clas);
+        
+        }
+     </script>
+
+     <form  name="f1">
+        Enter Name : <input type="text" name="nm"> <br>
+        Enter City : <input type="text" name="ct"> <br>
+        Enter Roll : <input type="text" name="rn"> <br>
+        Enter class : <input type="text" name="cls"> <br>
+
+        <button onclick="display()">click</button>
+
+     </form> 
+
+ 
+     
+</body>
+</html>

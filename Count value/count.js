@@ -13,7 +13,7 @@ var count = 0;
             if (count >= 5) {
                 myFun(); 
             }
-        }, 1000); 
+        }, 2000); 
 
         function myStopnow() {
             clearInterval(myInt); 

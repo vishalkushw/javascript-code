@@ -12,7 +12,7 @@ function myCount(){
 }
 
 function myStart(){
-   myInt= setInterval(myCount,1000);
+   myInt= setInterval(myCount,2000);
 }
 
 function myStop(){
